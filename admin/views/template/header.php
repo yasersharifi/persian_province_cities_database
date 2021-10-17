@@ -22,6 +22,13 @@
     <link rel="stylesheet" href="<?= siteUrl(); ?>assets/css/vertical-layout-light/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="<?= siteUrl(); ?>assets/images/favicon.png"/>
+    <!-- Font Vazir CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.1.0/font-face.min.css" integrity="sha512-FOp1/1tT19/xw6wkob5zvDLQUPFTgmYy6fXIKpo/nvZyMiyhe72YNhgSRlrE/FLS8OgYFONMGvqazSVLbO2/6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body, html {
+            font-family: Vazir !important;
+        }
+    </style>
 </head>
 <body>
 <div class="container-scroller">
