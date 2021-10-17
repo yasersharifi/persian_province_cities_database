@@ -8,6 +8,6 @@ function siteUrl($path = null) {
     return SITE_URL . $path;
 }
 
-function loadView($url, $data = null) {
+function loadView($url, $data = []) {
     include_once "views/" . $url;
 }

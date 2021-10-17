@@ -1,5 +1,5 @@
 <?php
-namespace Library;
+namespace Back\Library;
 
 class HeaderFooter
 {

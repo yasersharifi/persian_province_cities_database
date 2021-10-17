@@ -517,4 +517,4 @@
         <!-- partial -->
         <div class="main-panel">
             <div class="content-wrapper">
-                <div class="row">
+                <div class="row" style="direction: rtl; text-align: right">

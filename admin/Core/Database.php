@@ -1,20 +1,26 @@
 <?php
-namespace Database;
+namespace Back\Database;
 
 class Database
 {
-    private $host;
-    private $username;
-    private $password;
-    private $database;
+    private string $host;
+    private string $username;
+    private string $password;
+    private string $database;
 
-    protected $connection;
+    public $connection;
+
     public function __construct()
     {
+        $this->host = "localhost";
+        $this->username = "root";
+        $this->password = "";
+        $this->database = "province_cities";
+
         if (! $this->connection) {
             try {
-                $this->connection = new PDO("mysql:host={$this->host};dbname={$this->database}", $this->username, $this->password);
-                $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                $this->connection = new \PDO("mysql:host={$this->host};dbname={$this->database}", $this->username, $this->password);
+                $this->connection->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
                 return $this->connection;
             }
             catch (PDOException $error) {
@@ -22,7 +28,5 @@ class Database
             }
         }
         return $this->connection;
-
     }
-
 }
