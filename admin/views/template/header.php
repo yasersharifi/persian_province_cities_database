@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Star Admin2 </title>
+    <title><?= $pageTitle ?> || Yaser Sharifi</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="<?= siteUrl(); ?>assets/vendors/feather/feather.css">
     <link rel="stylesheet" href="<?= siteUrl(); ?>assets/vendors/mdi/css/materialdesignicons.min.css">
@@ -25,7 +25,7 @@
     <!-- Font Vazir CDN-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vazir-font/30.1.0/font-face.min.css" integrity="sha512-FOp1/1tT19/xw6wkob5zvDLQUPFTgmYy6fXIKpo/nvZyMiyhe72YNhgSRlrE/FLS8OgYFONMGvqazSVLbO2/6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-        body, html {
+        body, html, a, p, span, div, section, nav, ul, li {
             font-family: Vazir !important;
         }
     </style>
@@ -447,13 +447,22 @@
                     <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false"
                        aria-controls="form-elements">
                         <i class="menu-icon mdi mdi-card-text-outline"></i>
-                        <span class="menu-title">Form elements</span>
+                        <span class="menu-title">استان ها</span>
                         <i class="menu-arrow"></i>
                     </a>
                     <div class="collapse" id="form-elements">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic
-                                    Elements</a></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= siteUrl('province.php'); ?>">
+                                    همه استان ها
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= siteUrl('province.php/add'); ?>">
+                                    افزودن استان جدید
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -466,7 +475,7 @@
                     </a>
                     <div class="collapse" id="charts">
                         <ul class="nav flex-column sub-menu">
-                            <li class="nav-item"><a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+                            <li class="nav-item"><a class="nav-link" href="">ChartJs</a></li>
                         </ul>
                     </div>
                 </li>

@@ -4,7 +4,7 @@ ini_set("display_startup_errors", 1);
 error_reporting(E_ALL);
 
 defined("SITE_URL") | define("SITE_URL", "http://localhost/persian_province_cities_database/admin/");
-function siteUrl($path = null) {
+function siteUrl($path = null) : string {
     return SITE_URL . $path;
 }
 
